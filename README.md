@@ -2,7 +2,7 @@
 
 >## Overview
 
-![Backend Image](https://acortar.link/1kReYd)
+![Backend Image](https://brandslogos.com/wp-content/uploads/thumbs/nodejs-logo-vector.svg)
 
 This project is built with Node.js + Express.js + TypeScript.
 
@@ -92,7 +92,7 @@ $ npm run test
 ---------------------------------------
 The project has the following dependency libraries:
 
-```json
+```
 ->  Dependencisas:
     ├─"cors": "^2.8.5",
     ├─"dotenv": "^16.0.3",
