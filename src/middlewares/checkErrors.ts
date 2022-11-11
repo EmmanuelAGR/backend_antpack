@@ -17,7 +17,7 @@ const checkErrors = (
   req: Request,
   res: Response<IResponse>,
   next: NextFunction
-) => {
+): Response<IResponse, Record<string, any>> | undefined => {
   try {
     const errors = validationResult(req);
 

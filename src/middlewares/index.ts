@@ -29,9 +29,11 @@ const middlewares = (app: Application) => {
   app.use(express.static('public'));
 
   // -> Handle Server Errors <-
-  app.use(new HandleErrors().logErrors);
-  app.use(new HandleErrors().clientErrorHandler);
-  app.use(new HandleErrors().errorHandler);
+  const { logErrors, errorHandler, clientErrorHandler } = new HandleErrors();
+  
+  app.use(logErrors);
+  app.use(clientErrorHandler);
+  app.use(errorHandler);
 };
 
 export { middlewares, checkErrors };
