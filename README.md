@@ -14,7 +14,7 @@ $ npm run start
 ```
 2. Developer
 ```zsh
-$ npm run start
+$ npm run dev
 ```
 
 ## Database
